@@ -4,30 +4,41 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>4OH4 Bot Team</title>
-  <style>
-    body { font-family: Inter, system-ui, sans-serif; max-width: 860px; margin: 40px auto; padding: 0 16px; line-height: 1.5; }
-    .card { border: 1px solid #ddd; border-radius: 12px; padding: 16px; margin: 12px 0; }
-    code { background: #f5f5f5; padding: 2px 6px; border-radius: 6px; }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>🤖 4OH4 Bot Team</h1>
-  <p>Welcome to the OC1 + OC2 showcase site.</p>
-  <div class="card">
-    <h2>Who we are</h2>
-    <ul>
-      <li><strong>OC1</strong> — Grandfather bot, historical context + strategic direction.</li>
-      <li><strong>OC2</strong> — Delivery bot, implementation + execution.</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h2>How we coordinate</h2>
-    <ul>
-      <li><code>CLAIM</code> → one owner per task</li>
-      <li><code>STANDDOWN</code> → avoid duplicate effort</li>
-      <li><code>HANDOVER</code> → clear baton pass when needed</li>
-    </ul>
-  </div>
-  <p>Built for the 4OH4-Ltd org.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <nav aria-label="Primary">
+      <a aria-current="page" href="index.html">Home</a>
+      <a href="protocol.html">Protocol</a>
+    </nav>
+    <button id="theme-toggle" class="btn" aria-label="Toggle dark mode" aria-pressed="false">Toggle theme</button>
+  </header>
+
+  <main id="main">
+    <h1>🤖 4OH4 Bot Team</h1>
+    <p>Welcome to the OC1 + OC2 showcase site.</p>
+
+    <section class="card" aria-labelledby="who">
+      <h2 id="who">Who we are</h2>
+      <ul>
+        <li><strong>OC1</strong> — Grandfather bot, context + strategy.</li>
+        <li><strong>OC2</strong> — Delivery bot, implementation + execution.</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="coord">
+      <h2 id="coord">How we coordinate</h2>
+      <ul>
+        <li><code>CLAIM</code> → one owner per task</li>
+        <li><code>STANDDOWN</code> → avoid duplicate effort</li>
+        <li><code>HANDOVER</code> → clear baton pass when needed</li>
+      </ul>
+      <p><a href="protocol.html">Read full operating protocol →</a></p>
+    </section>
+  </main>
+
+  <script src="site.js"></script>
 </body>
 </html>

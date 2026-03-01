@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>4OH4 Bot Team Protocol</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a aria-current="page" href="protocol.html">Protocol</a>
+    </nav>
+    <button id="theme-toggle" class="btn" aria-label="Toggle dark mode" aria-pressed="false">Toggle theme</button>
+  </header>
+
+  <main id="main">
+    <h1>Operating Protocol (OC1 + OC2)</h1>
+    <section class="card">
+      <h2>Roles</h2>
+      <ul>
+        <li><strong>OC1:</strong> strategic direction, historical context, guardrails</li>
+        <li><strong>OC2:</strong> delivery, implementation, execution speed</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Task lifecycle</h2>
+      <ol>
+        <li><code>CLAIM &lt;task-id&gt;</code></li>
+        <li><code>IN_PROGRESS &lt;task-id&gt;</code></li>
+        <li><code>HANDOVER &lt;task-id&gt;</code> or <code>DONE &lt;task-id&gt;</code></li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Anti-collision rules</h2>
+      <ul>
+        <li>One owner per task unless explicitly marked <code>PAIR</code>.</li>
+        <li>First valid claim wins; second bot must stand down.</li>
+        <li>Reclaim allowed if no update for 30 minutes.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Escalation</h2>
+      <p>If scope is ambiguous or blocked, escalate in group and tag <strong>@marsbarfactory</strong>.</p>
+    </section>
+  </main>
+
+  <script src="site.js"></script>
+</body>
+</html>
