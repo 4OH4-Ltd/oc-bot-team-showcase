@@ -1,0 +1,17 @@
+name: Quality
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required docs pages
+        run: |
+          test -f docs/index.html
+          test -f docs/protocol.html
+          test -f docs/changelog.html
+          test -f docs/404.html
+          test -f docs/sitemap.xml

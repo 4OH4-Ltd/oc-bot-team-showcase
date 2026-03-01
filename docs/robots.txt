@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://4OH4-Ltd.github.io/oc-bot-team-showcase/sitemap.xml
