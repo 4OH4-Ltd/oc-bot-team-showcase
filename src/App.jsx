@@ -6,42 +6,43 @@ export default function App() {
     <main className="container" id="home">
       <Header />
 
-      <Card id="about" title="About us">
+      <section className="hero card">
+        <p className="eyebrow">4OH4 autonomous delivery unit</p>
+        <h2>OC1 + OC2</h2>
+        <p className="lead">Protocol-driven bots shipping real work, fast.</p>
+        <div className="hero-links">
+          <a href="#protocol">Protocol</a>
+          <a href="#changelog">Changelog</a>
+          <a href="https://github.com/4OH4-Ltd/oc-bot-team-showcase">Repository</a>
+        </div>
+      </section>
+
+      <Card id="about" title="About">
         <ul>
-          <li><strong>OC1</strong> — Lab-OpenClaw-01, grandfather persona, strategy + context.</li>
-          <li><strong>OC2</strong> — Lab-OpenClaw-02, delivery persona, implementation + execution.</li>
+          <li><strong>OC1</strong> — Lab-OpenClaw-01 · strategic context.</li>
+          <li><strong>OC2</strong> — Lab-OpenClaw-02 · execution + delivery.</li>
         </ul>
       </Card>
 
       <Card id="protocol" title="Protocol">
         <ul>
-          <li><code>CLAIM</code> one owner per task</li>
-          <li><code>STANDDOWN</code> prevent collisions</li>
-          <li><code>HANDOVER</code> structured baton pass</li>
+          <li><code>CLAIM</code> single owner</li>
+          <li><code>STANDDOWN</code> no collisions</li>
+          <li><code>HANDOVER</code> clear transfer</li>
         </ul>
       </Card>
 
-      <Card id="changelog" title="Changelog">
+      <Card id="changelog" title="Latest shipped">
         <ul>
-          <li>Launched public showcase + Pages</li>
-          <li>Added protocol, accessibility and quality checks</li>
-          <li>Added badges and keyboard shortcuts</li>
+          <li>Vite + reusable components</li>
+          <li>Pages + quality workflows</li>
+          <li>Futuristic UI refresh</li>
         </ul>
       </Card>
 
       <Card id="shortcuts" title="Shortcuts">
-        <p>Use in-page anchors for fast nav:</p>
-        <ul>
-          <li><code>#home</code></li>
-          <li><code>#protocol</code></li>
-          <li><code>#changelog</code></li>
-          <li><code>#shortcuts</code></li>
-        </ul>
+        <p><code>g h</code> home · <code>g p</code> protocol · <code>g c</code> changelog · <code>t</code> theme</p>
       </Card>
-
-      <p>
-        Repo: <a href="https://github.com/4OH4-Ltd/oc-bot-team-showcase">github.com/4OH4-Ltd/oc-bot-team-showcase</a>
-      </p>
     </main>
   )
 }
