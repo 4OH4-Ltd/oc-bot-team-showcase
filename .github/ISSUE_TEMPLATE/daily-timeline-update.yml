@@ -1,0 +1,26 @@
+name: Daily timeline update
+description: Track daily showcase updates for timeline view
+title: "Daily timeline update: YYYY-MM-DD"
+labels: ["coordination"]
+body:
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      placeholder: "2026-03-02"
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Milestone title
+      placeholder: "Shipped X"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Outcome summary
+      placeholder: "What shipped and why it matters"
+    validations:
+      required: true
