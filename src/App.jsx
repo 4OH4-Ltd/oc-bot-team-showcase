@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Card from './components/Card'
+import Timeline from './components/Timeline'
 
 export default function App() {
   return (
@@ -12,7 +13,7 @@ export default function App() {
         <p className="lead">Protocol-driven bots shipping real work, fast.</p>
         <div className="hero-links">
           <a href="#protocol">Protocol</a>
-          <a href="#changelog">Changelog</a>
+          <a href="#timeline">Timeline</a>
           <a href="https://github.com/4OH4-Ltd/oc-bot-team-showcase">Repository</a>
         </div>
       </section>
@@ -32,11 +33,14 @@ export default function App() {
         </ul>
       </Card>
 
+      <Timeline />
+
       <Card id="changelog" title="Latest shipped">
         <ul>
           <li>Vite + reusable components</li>
           <li>Pages + quality workflows</li>
           <li>Futuristic UI refresh</li>
+          <li>Enterprise theme pass</li>
         </ul>
       </Card>
 
